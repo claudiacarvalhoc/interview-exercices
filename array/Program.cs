@@ -6,7 +6,8 @@ namespace array
     {
         static void Main(string[] args)
         {
-            ReverseToMakeEqual.Entry();
+            // ReverseToMakeEqual.Entry();
+            Rotating2DMatrix.Run();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace array
     {
         public static void Entry() {
             Console.WriteLine("ReverseToMakeEqual");
-            
+
             Console.WriteLine("SHOULD RETURN TRUE");
 
             int[] arr_a1 = new int[] { 1,2,3,4 };
@@ -63,7 +63,7 @@ namespace array
         {
             Console.WriteLine("========================");
             
-            bool result = arr_a.Length != arr_b.Length ? false : ApplyReverse(arr_a, arr_b);
+            bool result = ApplyReverse(arr_a, arr_b);
             Console.WriteLine($"arr_a {string.Join(string.Empty, arr_a)}");
             Console.WriteLine($"arr_b {string.Join(string.Empty, arr_b)}");
             Console.WriteLine($"Result {result}");
