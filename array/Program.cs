@@ -8,7 +8,8 @@ namespace array
         {
             // ReverseToMakeEqual.Entry();
             // Rotating2DMatrix.Run();
-            ThreeSumProblem.Run();
+            // ThreeSumProblem.Run();
+            ListPrimeNumbers.Run();
         }
     }
 }
