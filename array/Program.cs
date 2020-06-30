@@ -7,7 +7,8 @@ namespace array
         static void Main(string[] args)
         {
             // ReverseToMakeEqual.Entry();
-            Rotating2DMatrix.Run();
+            // Rotating2DMatrix.Run();
+            ThreeSumProblem.Run();
         }
     }
 }

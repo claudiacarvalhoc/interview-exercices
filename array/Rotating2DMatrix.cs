@@ -49,10 +49,10 @@ namespace array
                 new int[] { 9, 10, 11, 12 },
                 new int[] {13, 14, 15, 16 }
             };
-            Matrix.ToString(matrix);
+            Display.Matrix(matrix);
             int[][] result = rotate(matrix);
             Console.WriteLine("Result:");
-            Matrix.ToString(result);
+            Display.Matrix(result);
         }
 
         public static int[][] rotate(int[][] matrix) {
