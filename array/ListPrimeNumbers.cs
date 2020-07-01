@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace array
 {
+    /**
+    Enumerate All Primes To N
+    Given an integer value n, enumerate all prime numbers from 1 to n (exclusive) and return the list with the enumeration.
+    */
     public class ListPrimeNumbers
     {
         public static void Run() {
