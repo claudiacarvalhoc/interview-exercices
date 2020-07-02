@@ -10,7 +10,8 @@ namespace array
             // Rotating2DMatrix.Run();
             // ThreeSumProblem.Run();
             // ListPrimeNumbers.Run();
-            MatrixSpiralTraversal.Run();
+            // MatrixSpiralTraversal.Run();
+            CountSubarraysThatSum2K.Run();
         }
     }
 }
