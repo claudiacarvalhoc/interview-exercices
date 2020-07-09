@@ -5,17 +5,17 @@ namespace permutations
 {
     public class Permutation
     {
-        public static List<string> GenerateAllPermutationsOfAString(int[] arr) {
-            return GenerateAllPermutationsOfAString(String.Empty, arr);
+        public static List<string> GenerateAllPermutationsOfAString(string[] arr) {
+            return GenPermutation(String.Empty, arr);
         }
 
-        public static List<string> GenPermutation(string word = "", string[] amountOfCharacters) {
+        public static List<string> GenPermutation(string word, string[] amountOfCharacters) {
             List<string> words = new List<string>();
             Queue<string> queue = new Queue<string>(amountOfCharacters);
             HashSet<string> seen = new HashSet<string>();
 
             do {
-                string character = currentAmountOfCharacter.Pop();
+                string character = queue.Pop();
                 string newWord = word + character;
                 seen.Add(character);
 
@@ -23,7 +23,7 @@ namespace permutations
                     return new List<string>(newWord);
                 }
 
-                while(currentAmountOfCharacter.Count > 0) {
+                while(queue.Count > 0) {
                     var response = GenPermutation(newWord, queue.ToArray());
                     words.AddRange(response);
                     queue.Push(character);
