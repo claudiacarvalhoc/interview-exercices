@@ -13,7 +13,7 @@ namespace primitives.reverse_bits
                 reverseBinaryString += binaryString[i];
             }
 
-            return Convert.ToDecimal(reverseBinaryString);
+            return Convert.ToInt32(reverseBinaryString);
         }
 
         /**

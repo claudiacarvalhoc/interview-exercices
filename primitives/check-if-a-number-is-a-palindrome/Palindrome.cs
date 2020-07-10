@@ -49,9 +49,9 @@ namespace primitives
             // using the base 10 logarithm to:
             // - get the number of digits 
             // - get the left mask to extract left digit
-            int log10 = Math.Log10(value);
-            int numberOfDigits = log10 + 1;
-            int leftMask = Math.Pow(10, log10);
+            double log10 = Math.Log10(value);
+            int numberOfDigits = (int) log10 + 1;
+            int leftMask = (int) Math.Pow(10, log10);
             int rightMask = 10;
 
             for (int i = 1; i <= numberOfDigits / 2; ++i) {
