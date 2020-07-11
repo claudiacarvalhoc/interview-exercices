@@ -15,18 +15,18 @@ namespace permutations
             HashSet<string> seen = new HashSet<string>();
 
             do {
-                string character = queue.Pop();
+                string character = queue.Dequeue();
                 string newWord = word + character;
                 seen.Add(character);
 
                 if (queue.Count == 1) {
-                    return new List<string>(newWord);
+                    return new List<string> { newWord };
                 }
 
                 while(queue.Count > 0) {
                     var response = GenPermutation(newWord, queue.ToArray());
                     words.AddRange(response);
-                    queue.Push(character);
+                    queue.Enqueue(character);
                 }
             } while(seen.Count != queue.Count);
 

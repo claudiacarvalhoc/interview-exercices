@@ -1,3 +1,4 @@
+using System;
 namespace heaps
 {
     public class MagicalCandyBags
@@ -29,7 +30,7 @@ namespace heaps
             int max = 0;
 
             for(int count = k; k > 0; --count) {
-                int numberOfCandies = pq.Dequeue();
+                double numberOfCandies = pq.Dequeue();
                 max += numberOfCandies;
                 int refill = Math.Floor(numberOfCandies / 2);
                 pq.Enqueue(refill);
